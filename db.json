@@ -1,0 +1,701 @@
+{
+  "users": [
+    {
+      "name": "solo1",
+      "staffID": "1",
+      "department": "cpe",
+      "_id": "2f9d219a-b963-4091-b9c5-752e6789f93e",
+      "scanned": true,
+      "dp": ".db/profile/2f9d219a-b963-4091-b9c5-752e6789f93e.jpg"
+    },
+    {
+      "name": "solo2",
+      "staffID": "2",
+      "department": "cpe",
+      "_id": "89229bcd-04f2-4f3a-bb55-a60bbf5c5523",
+      "scanned": true,
+      "dp": ".db/profile/89229bcd-04f2-4f3a-bb55-a60bbf5c5523.jpg"
+    },
+    {
+      "name": "solo3",
+      "staffID": "3",
+      "department": "cpe",
+      "_id": "39cd9bd3-e3c9-48b6-8246-c72ead010f39",
+      "scanned": true,
+      "dp": ".db/profile/39cd9bd3-e3c9-48b6-8246-c72ead010f39.jpg"
+    },
+    {
+      "name": "solo4",
+      "staffID": "4",
+      "department": "cpe",
+      "_id": "95dbb446-956e-47f9-bc73-eb71210aa598",
+      "scanned": true,
+      "dp": ".db/profile/95dbb446-956e-47f9-bc73-eb71210aa598.jpg"
+    },
+    {
+      "name": "solo5",
+      "staffID": "5",
+      "department": "cpe",
+      "_id": "9bc99483-aecd-462e-b200-58b841542520",
+      "scanned": true,
+      "dp": ".db/profile/9bc99483-aecd-462e-b200-58b841542520.jpg"
+    },
+    {
+      "name": "solo6",
+      "staffID": "6",
+      "department": "cpe",
+      "_id": "9e8e88ba-30bc-4331-be1c-d743ea4cdf6c",
+      "scanned": true,
+      "dp": ".db/profile/9e8e88ba-30bc-4331-be1c-d743ea4cdf6c.jpg"
+    },
+    {
+      "name": "solo7",
+      "staffID": "777",
+      "department": "cpe",
+      "_id": "110651dc-3255-42cd-9c29-626168876dd4",
+      "scanned": true,
+      "dp": ".db/profile/110651dc-3255-42cd-9c29-626168876dd4.jpg"
+    },
+    {
+      "name": "mama",
+      "staffID": "m12",
+      "department": "mmm",
+      "_id": "4d138384-e46d-481b-971c-244089782da2",
+      "scanned": true,
+      "dp": ".db/profile/4d138384-e46d-481b-971c-244089782da2.jpg"
+    },
+    {
+      "name": "solo",
+      "staffID": "111",
+      "department": "111",
+      "_id": "2fd82dc9-d25a-4cba-9e1f-607fd52b4f30",
+      "scanned": true,
+      "dp": ".db/profile/2fd82dc9-d25a-4cba-9e1f-607fd52b4f30.jpg"
+    },
+    {
+      "name": "Solo",
+      "staffID": "222",
+      "department": "ccc",
+      "_id": "fae8d537-3e47-49f9-8a72-3394ed3c38ef",
+      "scanned": true,
+      "dp": ".db/profile/fae8d537-3e47-49f9-8a72-3394ed3c38ef.jpg"
+    },
+    {
+      "name": "Adavize",
+      "staffID": "1212",
+      "department": "MEE",
+      "_id": "ee39ec04-ad53-461c-989c-c45715999418",
+      "scanned": true,
+      "dp": ".db/profile/ee39ec04-ad53-461c-989c-c45715999418.jpg"
+    },
+    {
+      "name": "ABRAHAM YAKUBU",
+      "staffID": "107",
+      "department": "COMPUTER",
+      "_id": "fee20ddf-f688-4133-bab2-ade3c14ff99d",
+      "scanned": true,
+      "dp": ".db/profile/fee20ddf-f688-4133-bab2-ade3c14ff99d.jpg"
+    },
+    {
+      "name": "Solomon Yakubu",
+      "staffID": "2222",
+      "department": "CPE",
+      "_id": "d574639e-8c2d-4900-a4c1-83954533e21d",
+      "scanned": true,
+      "dp": ".db/profile/d574639e-8c2d-4900-a4c1-83954533e21d.jpg"
+    },
+    {
+      "name": "SHANTEL JOHNHOLT",
+      "staffID": "17",
+      "department": "JSS1",
+      "_id": "6b6946e2-bca9-4c53-9a90-230070d77a97",
+      "scanned": true,
+      "dp": ".db/profile/6b6946e2-bca9-4c53-9a90-230070d77a97.jpg"
+    },
+    {
+      "name": "SHANTEL2",
+      "staffID": "7771",
+      "department": "JSS1",
+      "_id": "6b1b6fd6-0a61-4276-b9a0-e4941ded3a59",
+      "scanned": true,
+      "dp": ".db/profile/6b1b6fd6-0a61-4276-b9a0-e4941ded3a59.jpg"
+    },
+    {
+      "name": "SHANTEL3",
+      "staffID": "7772",
+      "department": "JSS1",
+      "_id": "a0261c5b-d76d-4292-89d9-652f0d3f5b09",
+      "scanned": true,
+      "dp": ".db/profile/a0261c5b-d76d-4292-89d9-652f0d3f5b09.jpg"
+    },
+    {
+      "name": "SHANTEL4",
+      "staffID": "7773",
+      "department": "JSS1",
+      "_id": "1db2d4e3-2442-4f0a-820c-7980bc0364c8",
+      "scanned": true,
+      "dp": ".db/profile/1db2d4e3-2442-4f0a-820c-7980bc0364c8.jpg"
+    },
+    {
+      "name": "SHANTEL4",
+      "staffID": "7774",
+      "department": "JSS1",
+      "_id": "26cb2988-f6d0-434e-9b39-0efd89469e32",
+      "scanned": true,
+      "dp": ".db/profile/26cb2988-f6d0-434e-9b39-0efd89469e32.jpg"
+    },
+    {
+      "name": "ESTHER JOHNHOLT",
+      "staffID": "SL123",
+      "department": "SLS",
+      "_id": "615a670c-9a25-4863-a203-5411ed8dd988",
+      "scanned": true,
+      "dp": ".db/profile/615a670c-9a25-4863-a203-5411ed8dd988.jpg"
+    },
+    {
+      "name": "DEBORAH YAKUBU",
+      "staffID": "SLT123",
+      "department": "SLT",
+      "_id": "402e739d-041c-48b0-aa62-5057e15f91ef",
+      "scanned": true,
+      "dp": ".db/profile/402e739d-041c-48b0-aa62-5057e15f91ef.jpg"
+    },
+    {
+      "name": "JOSEPH ADEIZA",
+      "staffID": "BB124",
+      "department": "BB",
+      "_id": "56ac2a36-ba49-475f-808d-d354f1617fd9",
+      "scanned": true,
+      "dp": ".db/profile/56ac2a36-ba49-475f-808d-d354f1617fd9.jpg"
+    },
+    {
+      "name": "Sunday Adams",
+      "staffID": "fs123",
+      "department": "Fishery",
+      "_id": "6a58a8de-415e-4927-93b9-24d186608032",
+      "scanned": true,
+      "dp": ".db/profile/6a58a8de-415e-4927-93b9-24d186608032.jpg"
+    },
+    {
+      "name": "Samuel Agada",
+      "staffID": "1222",
+      "department": "Sociology",
+      "_id": "bee340da-106b-429c-9e48-d9620283f79a",
+      "scanned": true,
+      "dp": ".db/profile/bee340da-106b-429c-9e48-d9620283f79a.jpg"
+    },
+    {
+      "name": "Johnson Amos",
+      "staffID": "cp123",
+      "department": "CPE",
+      "_id": "74776529-d606-40f4-a14b-4b60ba2a0389",
+      "scanned": true,
+      "dp": ".db/profile/74776529-d606-40f4-a14b-4b60ba2a0389.jpg"
+    },
+    {
+      "name": "John Adams",
+      "staffID": "2323",
+      "department": "CPE",
+      "_id": "0027a15c-d768-40bb-b478-ae67379f3ff9",
+      "scanned": true,
+      "dp": ".db/profile/0027a15c-d768-40bb-b478-ae67379f3ff9.jpg"
+    },
+    {
+      "name": "Samson Enoch",
+      "staffID": "Bio123",
+      "department": "Biochemistry",
+      "_id": "57cd7e50-da06-4dfc-8574-b6f41389514a",
+      "scanned": true,
+      "dp": ".db/profile/57cd7e50-da06-4dfc-8574-b6f41389514a.jpg"
+    },
+    {
+      "name": "Thomas Amos",
+      "staffID": "chem111",
+      "department": "Chemistry",
+      "_id": "64adfd5d-615f-49ac-b50e-fc2355fdb1d6",
+      "scanned": true,
+      "dp": ".db/profile/64adfd5d-615f-49ac-b50e-fc2355fdb1d6.jpg"
+    },
+    {
+      "name": "Samuel Amedu",
+      "staffID": "M1700226",
+      "department": "Computer Engineering",
+      "_id": "3e28cd6e-4636-4723-a428-c6916358480a",
+      "scanned": true,
+      "dp": ".db/profile/3e28cd6e-4636-4723-a428-c6916358480a.jpg"
+    },
+    {
+      "name": "JOSEPH ADEIZA EMMANUEL",
+      "staffID": "CPE123",
+      "department": "COMPUTER ENGINEERING",
+      "_id": "e26d093a-cd91-4019-8e52-d1de1d141425",
+      "scanned": true,
+      "dp": ".db/profile/e26d093a-cd91-4019-8e52-d1de1d141425.jpg"
+    },
+    {
+      "name": "Johnson Abel",
+      "staffID": "Bio111",
+      "department": "Biology",
+      "_id": "646bff2e-e1a3-420e-898e-6a89a8e1810b",
+      "scanned": true,
+      "dp": ".db/profile/646bff2e-e1a3-420e-898e-6a89a8e1810b.jpg"
+    },
+    {
+      "name": "Adams Oshiomole",
+      "staffID": "Fr123",
+      "department": "Fraudery",
+      "_id": "73f78025-0fec-4549-8c3c-c88b182baf41",
+      "scanned": true,
+      "dp": ".db/profile/73f78025-0fec-4549-8c3c-c88b182baf41.jpg"
+    },
+    {
+      "name": "Goodluck Jonathan",
+      "staffID": "pre134",
+      "department": "Presidency",
+      "_id": "64d35893-e00a-4685-b5ca-63d5a16b5ca3",
+      "scanned": true,
+      "dp": ".db/profile/64d35893-e00a-4685-b5ca-63d5a16b5ca3.jpg"
+    },
+    {
+      "name": "Solomon",
+      "staffID": "234",
+      "department": "cpe",
+      "_id": "68415587-2a24-436d-8b9a-1705545db205",
+      "scanned": false,
+      "dp": ".db/profile/68415587-2a24-436d-8b9a-1705545db205.jpg"
+    },
+    {
+      "name": "solo",
+      "staffID": "eee",
+      "department": "cpe",
+      "_id": "a3f0fc24-7ef4-496a-9e22-019842186869",
+      "scanned": true,
+      "dp": ".db/profile/a3f0fc24-7ef4-496a-9e22-019842186869.jpg"
+    },
+    {
+      "name": "Solomon",
+      "staffID": "123",
+      "department": "cpe",
+      "_id": "0db94cd6-fe7d-444a-ba17-8ee75f5a26ad",
+      "scanned": false
+    },
+    {
+      "name": "solomon",
+      "staffID": "fkfjk",
+      "department": "sfj",
+      "_id": "218a9fd3-95fb-4471-86a0-4375175d35b5",
+      "scanned": false
+    },
+    {
+      "name": "solom",
+      "staffID": "fkf",
+      "department": "dkf",
+      "_id": "e7ae3840-fd6c-4665-95f6-f9ddb2f93309",
+      "scanned": false
+    },
+    {
+      "name": "solom",
+      "staffID": "dkdk",
+      "department": "kfjf",
+      "_id": "369d1a30-d518-4ae4-9fab-c52632f4026f",
+      "scanned": false
+    },
+    {
+      "name": "solo",
+      "staffID": "fjf",
+      "department": "kfj",
+      "_id": "ae0a2c12-3ba0-47b9-b9e6-4ee264f28e57",
+      "scanned": false,
+      "dp": ".db/profile/ae0a2c12-3ba0-47b9-b9e6-4ee264f28e57.jpg"
+    },
+    {
+      "name": "gjfk",
+      "staffID": "kfkf",
+      "department": "kfkfk",
+      "_id": "f87ee863-7a17-4f08-87fc-7a2ae072cbf3",
+      "scanned": true,
+      "dp": ".db/profile/f87ee863-7a17-4f08-87fc-7a2ae072cbf3.jpg"
+    },
+    {
+      "name": "igigi",
+      "staffID": "ififi",
+      "department": "iifiif",
+      "_id": "000c73fd-e1aa-4b9b-9fdd-2a6aa359164d",
+      "scanned": true,
+      "dp": ".db/profile/000c73fd-e1aa-4b9b-9fdd-2a6aa359164d.jpg"
+    },
+    {
+      "name": "mama",
+      "staffID": "mama1",
+      "department": "house",
+      "_id": "7617175e-c2d7-442f-942d-2cfe13940be9",
+      "scanned": true,
+      "dp": ".db/profile/7617175e-c2d7-442f-942d-2cfe13940be9.jpg"
+    },
+    {
+      "name": "mama",
+      "staffID": "mama2",
+      "department": "home",
+      "_id": "c44a8a04-dbe6-41a7-ac77-5985a0b0ad9b",
+      "scanned": true,
+      "dp": ".db/profile/c44a8a04-dbe6-41a7-ac77-5985a0b0ad9b.jpg"
+    },
+    {
+      "name": "adams",
+      "staffID": "tkyf00",
+      "department": "home",
+      "_id": "f5ee9fc0-725e-463c-9d66-5258d2259593",
+      "scanned": true,
+      "dp": ".db/profile/f5ee9fc0-725e-463c-9d66-5258d2259593.jpg"
+    },
+    {
+      "name": "hhh",
+      "staffID": "bb",
+      "department": "jjj",
+      "_id": "e17c0e6a-d7cd-4e6d-b649-279f9b67ac8f",
+      "scanned": true,
+      "dp": ".db/profile/e17c0e6a-d7cd-4e6d-b649-279f9b67ac8f.jpg"
+    },
+    {
+      "name": "musmus",
+      "staffID": "gfmn",
+      "department": "home",
+      "_id": "9a5d52a7-08e8-4dec-afdb-33f0a2d5dd5c",
+      "scanned": true,
+      "dp": ".db/profile/9a5d52a7-08e8-4dec-afdb-33f0a2d5dd5c.jpg"
+    },
+    {
+      "name": "Solomon Yakubu",
+      "staffID": "JPF12222",
+      "department": "Computer Engineering",
+      "email": "soloyaks.sy@gmail.com",
+      "building": "Senate",
+      "_id": "69ffa705-635d-4e5b-af50-f330e8788910",
+      "scanned": true,
+      "dp": ".db/profile/69ffa705-635d-4e5b-af50-f330e8788910.jpg"
+    },
+    {
+      "name": "solo6",
+      "staffID": "2345",
+      "department": "Cpe",
+      "email": "soloyaks.sy@gmail.com",
+      "building": "SET",
+      "_id": "36900876-ffa6-4319-b0ed-0bd0a19c941a",
+      "scanned": true,
+      "dp": ".db/profile/36900876-ffa6-4319-b0ed-0bd0a19c941a.jpg"
+    },
+    {
+      "name": "solomon",
+      "staffID": "kdkdkk",
+      "department": "kdkkd",
+      "email": "kdkd",
+      "building": "kdkdk",
+      "_id": "5d7efa3d-58f7-4334-9771-d9c5f6428614",
+      "scanned": false
+    },
+    {
+      "name": "gjjgjj",
+      "staffID": "fjlf",
+      "department": "gjjgj",
+      "email": "jjfj",
+      "building": "jfj",
+      "_id": "edb90383-826d-4b3f-9a07-4fce39ea9457",
+      "scanned": true,
+      "dp": ".db/profile/edb90383-826d-4b3f-9a07-4fce39ea9457.jpg"
+    },
+    {
+      "name": "nfnnd",
+      "staffID": "nvnvn",
+      "department": "nfnfn",
+      "email": "vnnvn",
+      "building": "vnnvn",
+      "_id": "16ef0337-f272-4363-8bdb-937c19ae0279",
+      "scanned": true,
+      "dp": ".db/profile/16ef0337-f272-4363-8bdb-937c19ae0279.jpg"
+    },
+    {
+      "name": "tt",
+      "staffID": "ff",
+      "department": "ff",
+      "email": "ff",
+      "building": "ff",
+      "_id": "92fad7a4-2d9b-4ecf-ad9a-df593c27b8a4",
+      "scanned": false,
+      "dp": ".db/profile/92fad7a4-2d9b-4ecf-ad9a-df593c27b8a4.jpg"
+    },
+    {
+      "name": "yyyy",
+      "staffID": "g",
+      "department": "ffffff",
+      "email": "g",
+      "building": "gf",
+      "_id": "b9fa8497-e072-4802-9e8a-714e81635ecf",
+      "scanned": false
+    },
+    {
+      "name": "jjjjjJJ",
+      "staffID": "jjj",
+      "department": "jjjj",
+      "email": "jjjj",
+      "building": "jj",
+      "_id": "5059a6b2-0c6c-471d-bb45-7482b34ffd2c",
+      "scanned": false
+    },
+    {
+      "name": "jjjjjjj",
+      "staffID": "jjjjjjjjj",
+      "department": "jjjjjjjjj",
+      "email": "jjjjjjj",
+      "building": "jjjjjjj",
+      "_id": "443bde5a-7166-4042-ac50-fe25cb5fcd31",
+      "scanned": false,
+      "dp": ".db/profile/443bde5a-7166-4042-ac50-fe25cb5fcd31.jpg"
+    },
+    {
+      "name": "hhhhhhhh",
+      "staffID": "HHHHHHH",
+      "department": "HHHHHHH",
+      "email": "HHHHHHH",
+      "building": "HHHHH",
+      "_id": "20e2a35c-bafa-4950-a87b-1bcb4c54d746",
+      "scanned": false,
+      "dp": ".db/profile/20e2a35c-bafa-4950-a87b-1bcb4c54d746.jpg"
+    },
+    {
+      "name": "gggg",
+      "staffID": "d",
+      "department": "ddd",
+      "email": "dd",
+      "building": "d",
+      "_id": "25af0003-9212-4700-9e74-7d6b9a1657a8",
+      "scanned": false,
+      "dp": ".db/profile/25af0003-9212-4700-9e74-7d6b9a1657a8.jpg"
+    },
+    {
+      "name": "vvvvvv",
+      "staffID": "vvvvvvvv",
+      "department": "vvvvvvvv",
+      "email": "vvvvvvvv",
+      "building": "vvvv",
+      "_id": "7011187f-246a-4f2f-8e9e-372d66ba3c2f",
+      "scanned": false
+    },
+    {
+      "name": "dddd",
+      "staffID": "kkkk",
+      "department": "hhhh",
+      "email": "h",
+      "building": "h",
+      "_id": "665e37ac-48ee-472d-ba12-725f62d4ccef",
+      "scanned": false,
+      "dp": ".db/profile/665e37ac-48ee-472d-ba12-725f62d4ccef.jpg"
+    },
+    {
+      "name": "hhhhhhh",
+      "staffID": "hhh",
+      "department": "hhhhhh",
+      "email": "hhhhhhhhh",
+      "building": "hhhhh",
+      "_id": "ce084942-bb76-43d0-a884-1e4716d19978",
+      "scanned": false,
+      "dp": ".db/profile/ce084942-bb76-43d0-a884-1e4716d19978.jpg"
+    },
+    {
+      "name": "HhhhhhhhHH",
+      "staffID": "hhhhhh",
+      "department": "hhhhhhhhh",
+      "email": "hhhhh",
+      "building": "hhhhhh",
+      "_id": "d7b0d8c8-f084-4625-8546-c13b3dc70eff",
+      "scanned": false
+    },
+    {
+      "name": "nnnnnJ",
+      "staffID": "jjjjjjjjjjj",
+      "department": "jjjjjjjjjj",
+      "email": "jjjjjjjjjj",
+      "building": "jjjjjj",
+      "_id": "e1c5201e-583b-4d87-ba59-1d79ab67777a",
+      "scanned": false
+    },
+    {
+      "name": "uuuuuuuuu",
+      "staffID": "000000",
+      "department": "uuuuuuuuu",
+      "email": "uuuuuuuuu",
+      "building": "uuuuuu",
+      "_id": "970f19ab-3f26-47ca-b010-cde56774cb9f",
+      "scanned": false,
+      "dp": ".db/profile/970f19ab-3f26-47ca-b010-cde56774cb9f.jpg"
+    },
+    {
+      "name": "gg",
+      "staffID": "hhhhhhhhhhhh",
+      "department": "dddddd",
+      "email": "ddddddddddd",
+      "building": "ff",
+      "_id": "cf0ff8ea-3336-4680-a88b-a008c972a4f8",
+      "scanned": false
+    },
+    {
+      "name": "jjjjjjj",
+      "staffID": "jjjjjjj",
+      "department": "jjjjjjj",
+      "email": "jjjjjjj",
+      "building": "jjjjjj",
+      "_id": "a697dbcf-58bf-4364-8c89-1dd15714e085",
+      "scanned": true,
+      "dp": ".db/profile/a697dbcf-58bf-4364-8c89-1dd15714e085.jpg"
+    },
+    {
+      "name": "fffffff",
+      "staffID": "nnnnnnn",
+      "department": "nnnnnnn",
+      "email": "nnnnnnnnnn",
+      "building": "nnnnn",
+      "_id": "03a74b22-9ed7-4de6-a7cb-973b680f6a6d",
+      "scanned": true,
+      "dp": ".db/profile/03a74b22-9ed7-4de6-a7cb-973b680f6a6d.jpg"
+    },
+    {
+      "name": "hhhhhhhhh",
+      "staffID": "hhhhhhhhhh",
+      "department": "hhhhhhhhhhh",
+      "email": "hhhhhhhhhhhh",
+      "building": "hhhhhhhhhh",
+      "_id": "9a6efb05-17b1-4050-a768-675e8d4c0d34",
+      "scanned": false,
+      "dp": ".db/profile/9a6efb05-17b1-4050-a768-675e8d4c0d34.jpg"
+    },
+    {
+      "name": "hhhhhhhhhhhhhhhhhhH",
+      "staffID": "HHHHHHHHHHHH",
+      "department": "HHHHHHHH",
+      "email": "HHHHHHHHHHH",
+      "building": "HHHHHHHHHH",
+      "_id": "85db2fa4-f4e3-495e-99a2-998972556e90",
+      "scanned": true,
+      "dp": ".db/profile/85db2fa4-f4e3-495e-99a2-998972556e90.jpg"
+    },
+    {
+      "name": "sdfhdfjshj",
+      "staffID": "kjasjl",
+      "department": "skjfdsj",
+      "email": "fdkas",
+      "building": "jfaskl",
+      "_id": "49011967-72f4-410e-9416-e7fc547b1c5f",
+      "scanned": true,
+      "dp": ".db/profile/49011967-72f4-410e-9416-e7fc547b1c5f.jpg"
+    },
+    {
+      "name": "gfjsdkjkjg",
+      "staffID": "jfjaj",
+      "department": "jajj",
+      "email": "jfsjjaj",
+      "building": "jfjajjaf",
+      "_id": "d2d54fbe-ab42-4cb3-a907-ff6648db1b5b",
+      "scanned": true,
+      "dp": ".db/profile/d2d54fbe-ab42-4cb3-a907-ff6648db1b5b.jpg"
+    },
+    {
+      "name": "jgjjg",
+      "staffID": "jfjfj",
+      "department": "jfjfj",
+      "email": "jfjfj",
+      "building": "fjjf",
+      "_id": "c6dbe4ad-d7b2-4cf5-832d-149535a0bdab",
+      "scanned": true,
+      "dp": ".db/profile/c6dbe4ad-d7b2-4cf5-832d-149535a0bdab.jpg"
+    },
+    {
+      "name": "King Solo",
+      "staffID": "001",
+      "department": "Computer Engineering",
+      "email": "solomon@gmaill.com",
+      "building": "SICT",
+      "_id": "c3c56fbd-8608-4bc4-9386-935602d515e2",
+      "scanned": true,
+      "dp": ".db/profile/c3c56fbd-8608-4bc4-9386-935602d515e2.jpg"
+    },
+    {
+      "name": "hfhfh",
+      "staffID": "hdhhd",
+      "department": "hchc",
+      "email": "hhhdh",
+      "building": "hdhh",
+      "_id": "08b07151-3ded-49c8-9f03-e921bc3aaab1",
+      "scanned": false,
+      "dp": ".db/profile/08b07151-3ded-49c8-9f03-e921bc3aaab1.jpg"
+    },
+    {
+      "name": "jhfhfh",
+      "staffID": "fhhfhf",
+      "department": "hhfhfh",
+      "email": "fhhfhf",
+      "building": "fhhfhfhf",
+      "_id": "bf381b26-ae9a-44a5-a250-3fea380116f8",
+      "scanned": false,
+      "dp": ".db/profile/bf381b26-ae9a-44a5-a250-3fea380116f8.jpg"
+    },
+    {
+      "name": "jjjffj",
+      "staffID": "jfjfjjfj",
+      "department": "fjjfjf",
+      "email": "jfjfjjfjfj",
+      "building": "jfjfjfj",
+      "_id": "98025c23-098f-4a32-9d22-470ea6cb40ae",
+      "scanned": false,
+      "dp": ".db/profile/98025c23-098f-4a32-9d22-470ea6cb40ae.jpg"
+    },
+    {
+      "name": "gjgjgjKKK",
+      "staffID": "kkk",
+      "department": "kfkfk",
+      "email": "fkkfk",
+      "building": "kkf",
+      "_id": "37c20605-6163-4308-8bf5-38f3f8fb3956",
+      "scanned": true,
+      "dp": ".db/profile/37c20605-6163-4308-8bf5-38f3f8fb3956.jpg"
+    },
+    {
+      "name": "gjgj",
+      "staffID": "kkkka",
+      "department": "fjjfjj",
+      "email": "jfjfjfj",
+      "building": "fjfjfj",
+      "_id": "cbd9c36a-6449-4865-ba82-154e829a753f",
+      "scanned": true,
+      "dp": ".db/profile/cbd9c36a-6449-4865-ba82-154e829a753f.jpg"
+    },
+    {
+      "name": "Sarah Mohammed",
+      "staffID": "sarah123",
+      "department": "Fishery",
+      "email": "sarah@gmail.com",
+      "building": "Senate",
+      "_id": "535ba3b8-e735-4504-b12a-270b6b76719b",
+      "scanned": true,
+      "dp": ".db/profile/535ba3b8-e735-4504-b12a-270b6b76719b.jpg"
+    },
+    {
+      "name": "Abraham Yakubu",
+      "staffID": "ab123",
+      "department": "Computer Science",
+      "email": "abraham@gmail.com",
+      "building": "Senate",
+      "_id": "a1bcaa3f-a701-4aa4-9aa7-f545a657fcba",
+      "scanned": true,
+      "dp": ".db/profile/a1bcaa3f-a701-4aa4-9aa7-f545a657fcba.jpg"
+    },
+    {
+      "name": "Sunday",
+      "staffID": "1234",
+      "department": "fishery",
+      "email": "solomon@gmail.com",
+      "building": "senate",
+      "_id": "4e85b8db-ec84-4d40-9ba9-769ed7c79d2f",
+      "scanned": true,
+      "dp": ".db/profile/4e85b8db-ec84-4d40-9ba9-769ed7c79d2f.jpg"
+    }
+  ]
+}
