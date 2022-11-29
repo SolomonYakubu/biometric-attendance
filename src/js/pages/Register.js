@@ -160,7 +160,7 @@ export default function Register({ setCanRoute }) {
             </div>
 
             <div className=" w-full flex flex-col justify-between items-start m-2">
-              <button className="btn btn-primary bg-gradient-to-r from-primary to-blue-500 w-100 my-15 fs-16">
+              <button className="btn btn-primary bg-gradient-to-b from-primary to-blue-500 w-100 my-15 fs-16">
                 Submit
               </button>
             </div>

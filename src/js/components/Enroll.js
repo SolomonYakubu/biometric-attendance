@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { AiOutlineLoading } from "react-icons/ai";
+import { BsHandThumbsUpFill } from "react-icons/bs";
 export default function Enroll({ _id, setReg, setCanRoute, setUpload }) {
   const [res, setRes] = useState("");
   const [scan, setScan] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [count, setCount] = useState(0);
   const navigate = useNavigate();
+
   const alert = useAlert();
   // console.log(_id);
   const getMessage = (event) => {
@@ -46,6 +49,20 @@ export default function Enroll({ _id, setReg, setCanRoute, setUpload }) {
       /> */}
 
       <div className="sub-container flex flex-col justify-center items-center p-4 w-3/5 h-3/4">
+        <div className="flex items-center justify-center bg-bg1 p-2 my-2 rounded">
+          <BsHandThumbsUpFill
+            size={40}
+            className={`text-white ${count < 1 && "opacity-30"}`}
+          />
+          <BsHandThumbsUpFill
+            size={40}
+            className={`text-white ${count < 2 && "opacity-30"}`}
+          />
+          <BsHandThumbsUpFill
+            size={40}
+            className={`text-white ${count < 3 && "opacity-30"}`}
+          />
+        </div>
         {(res && (
           <img
             src={res && `${res}`}
@@ -66,12 +83,15 @@ export default function Enroll({ _id, setReg, setCanRoute, setUpload }) {
             if (!_id) {
               return;
             }
+            if (count === 2) {
+              setCount((currentCount) => currentCount + 1);
+            }
             setLoading(true);
-            const res = await electron.runScan(_id);
+            const res = await electron.runScan({ _id, count });
 
             window.addEventListener("message", getMessage);
           }}
-          className="btn btn-primary bg-gradient-to-r from-primary to-blue-500 relative w-1/5 m-3 disabled:opacity-50 disabled:pointer-events-none"
+          className="btn btn-primary bg-gradient-to-b from-primary to-blue-500 relative w-1/5 m-3 disabled:opacity-50 disabled:pointer-events-none"
           disabled={loading}
         >
           {loading && (
@@ -82,24 +102,39 @@ export default function Enroll({ _id, setReg, setCanRoute, setUpload }) {
           )}{" "}
           {(scan && "Re-Scan") || "Scan"}
         </button>
-        <input
-          type="button"
-          value={"Finish"}
-          className="btn btn-secondary "
-          style={{ alignSelf: "flex-end" }}
-          onClick={() => {
-            if (scan) {
-              alert.show("Registration Completed", { type: "success" });
-              setTimeout(() => {
-                setReg(false);
-                setUpload(false);
-                setCanRoute(true);
-              }, 1500);
-              return;
-            }
-            alert.show("You must enroll first", { type: "error" });
-          }}
-        />
+        {count < 3 && (
+          <button
+            onClick={async () => {
+              if (count < 3) {
+                setCount((currentCount) => currentCount + 1);
+                setScan(false);
+              }
+            }}
+            className="btn btn-primary bg-gradient-to-b from-primary to-blue-500 relative w-1/5 m-3 disabled:opacity-50 disabled:pointer-events-none"
+          >
+            Next
+          </button>
+        )}
+        {count > 2 && (
+          <input
+            type="button"
+            value={"Finish"}
+            className="btn btn-secondary "
+            style={{ alignSelf: "flex-end" }}
+            onClick={() => {
+              if (scan) {
+                alert.show("Registration Completed", { type: "success" });
+                setTimeout(() => {
+                  setReg(false);
+                  setUpload(false);
+                  setCanRoute(true);
+                }, 1500);
+                return;
+              }
+              alert.show("You must enroll first", { type: "error" });
+            }}
+          />
+        )}
       </div>
     </>
   );

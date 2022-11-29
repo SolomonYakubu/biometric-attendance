@@ -82,11 +82,11 @@ export default function Upload({ _id, setUpload, setReg }) {
           <input
             type="file"
             onChange={onImageChange}
-            className="custom-file-input btn-primary text-white w-3/4 bg-gradient-to-r from-primary to-blue-500"
+            className="custom-file-input btn-primary text-white w-3/4 bg-gradient-to-b from-primary to-blue-500"
           />
 
           <button
-            className="btn btn-primary w-3/4 m-3 bg-gradient-to-r from-primary to-blue-500"
+            className="btn btn-primary w-3/4 m-3 bg-gradient-to-b from-primary to-blue-500"
             onClick={() => setCam(true)}
           >
             Take Snapshot
@@ -128,7 +128,7 @@ export default function Upload({ _id, setUpload, setReg }) {
               capture();
               setCam(false);
             }}
-            className="btn btn-primary w-3/6 bg-gradient-to-r from-primary to-blue-500"
+            className="btn btn-primary w-3/6 bg-gradient-to-b from-primary to-blue-500"
           >
             Capture
           </button>

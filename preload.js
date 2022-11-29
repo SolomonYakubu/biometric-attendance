@@ -40,5 +40,9 @@ contextBridge.exposeInMainWorld("electron", {
     ipcRenderer.invoke("get-report", id).then((result) => {});
     send("report-res");
   },
+  login: (data) => {
+    ipcRenderer.invoke("get-login", data).then((result) => {});
+    send("login-res");
+  },
   path: path,
 });

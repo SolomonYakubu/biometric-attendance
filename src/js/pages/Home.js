@@ -6,12 +6,13 @@ import { TiTick, TiChartBar } from "react-icons/ti";
 import { TbFileReport } from "react-icons/tb";
 export default function Home() {
   const navigate = useNavigate();
-  const links = [
+  const link = [
     { name: "Register", link: "/register", icon: <GoSignIn size={40} /> },
     { name: "Take Attendance", link: "/match", icon: <TiTick size={40} /> },
     { name: "Stats", link: "/stats", icon: <TiChartBar size={40} /> },
     { name: "Report", link: "/report", icon: <TbFileReport size={40} /> },
   ];
+
   return (
     <div className="container flex flex-col h-[95vh]">
       <h1 className="text-white text-5xl my-2">Home</h1>
@@ -24,15 +25,15 @@ export default function Home() {
           onMouseLeave={(e) => {
             e.target.src = "./src/img/finger.svg";
           }}
-          className="h-40 w-40"
+          className="h-36 w-36"
           // height="200"
           // width="200"
         />
-        <div className="h-full w-full flex flex-wrap items-start justify-center gap-x-7">
-          {links.map((item, index) => (
+        <div className="h-2/3 w-full flex flex-wrap items-center justify-center gap-12">
+          {link.map((item, index) => (
             <div key={index} className=" w-2/5 h-2/5">
               <button
-                className=" btn-primary bg-gradient-to-r from-primary to-blue-500 flex flex-col justify-center items-center rounded-lg w-full h-full"
+                className=" btn-primary bg-gradient-to-b from-primary to-blue-500 flex flex-col justify-center items-center rounded-lg w-full h-full"
                 onClick={() => {
                   navigate(item.link);
                 }}
@@ -43,6 +44,22 @@ export default function Home() {
             </div>
           ))}
         </div>
+        {/* 
+        <div className="h-2/5 w-full flex flex-wrap items-start justify-center gap-x-12">
+          {link2.map((item, index) => (
+            <div key={index} className=" w-2/5 h-2/3">
+              <button
+                className=" btn-primary bg-gradient-to-b from-primary to-blue-500 flex flex-col justify-center items-center rounded-lg w-full h-full"
+                onClick={() => {
+                  navigate(item.link);
+                }}
+              >
+                {item.icon}
+                {item.name}
+              </button>
+            </div>
+          ))}
+        </div> */}
         {/* <button
           className="btn btn-primary w-4/5 m-2"
           onClick={() => {

@@ -1,7 +1,9 @@
 const getProfile = async (_id) => {
   const dbase = require("../utils/connectDB");
+
   const lodash = require("lodash");
   const db = await dbase();
+
   // console.log(db);
   db.chain = lodash.chain(db.data);
   const user = db.chain.get("users").find({ _id }).value();
@@ -57,7 +59,7 @@ const getEachDayStats = async (_id) => {
     let currentDayNumberLength = attend?.filter(
       (item) =>
         item.month === month &&
-        new Date(`${year}/${month + 1}/${day}`).getDay() === i &&
+        new Date(`${item.year}/${item.month + 1}/${item.day}`).getDay() === i &&
         item.year === year
     )?.length;
     let today = { day: weekDays[i], attendance: currentDayNumberLength };
@@ -74,7 +76,7 @@ const getTimeStats = async (_id) => {
   const day = new Date().getDay();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
-
+  const { _24to12 } = require("../utils/formatTime");
   const attend = db.chain.get("attendance").find({ _id }).value()?.attendance;
 
   //   console.log(totalAttend);
@@ -87,7 +89,9 @@ const getTimeStats = async (_id) => {
         item.year === year
     )?.length;
     let hours = {
-      name: `${i}:00 - ${(i < 23 && `${i + 1}:00`) || "0:00"}`,
+      name: `${_24to12(`${i}:0`)} - ${_24to12(
+        `${(i < 23 && `${i + 1}:0`) || "0:0"}`
+      )}`,
       attendance: currentTimeNumberLength,
     };
     time.push(hours);

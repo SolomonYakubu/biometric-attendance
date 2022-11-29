@@ -63,7 +63,7 @@ const getEachDayStats = async () => {
     let currentDayNumberLength = totalAttend.filter(
       (item) =>
         item.month === month &&
-        new Date(`${year}-${month + 1}-${day}`).getDay() === i &&
+        new Date(`${item.year}-${item.month + 1}-${item.day}`).getDay() === i &&
         item.year === year
     )?.length;
     let today = { day: weekDays[i], attendance: currentDayNumberLength };
@@ -79,6 +79,8 @@ const getTimeStats = async () => {
   const db = await dbase();
   db.chain = lodash.chain(db.data);
   const day = new Date().getDay();
+  const { _24to12 } = require("../utils/formatTime");
+
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
 
@@ -100,7 +102,9 @@ const getTimeStats = async () => {
         item.year === year
     )?.length;
     let hours = {
-      name: `${i}:00 - ${(i < 23 && `${i + 1}:00`) || "0:00"}`,
+      name: `${_24to12(`${i}:0`)} - ${_24to12(
+        `${(i < 23 && `${i + 1}:0`) || "0:0"}`
+      )}`,
       attendance: currentTimeNumberLength,
     };
     time.push(hours);

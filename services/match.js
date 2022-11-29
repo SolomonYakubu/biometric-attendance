@@ -19,7 +19,7 @@ const matchUser = async (event, arg) => {
         (response == "" || response == "Fingerprint image is written")
       ) {
         const currentPath = path.resolve(".exec", `match.xyt`);
-        const minPath = path.resolve(".db", "m.lis");
+        const minPath = path.resolve(".db/minut", "m.lis");
         exec(
           `cd .exec/exec && bozorth3 -p \"${currentPath}\" -G \"${minPath}\"`,
           (err, stdo, stde) => {
@@ -29,15 +29,20 @@ const matchUser = async (event, arg) => {
             const index = numArr.indexOf(max);
             let minut;
             fs.readFile(
-              path.join(".db", "m.lis"),
+              path.resolve(".db/minut", "m.lis"),
               "utf8",
               async (err, data) => {
                 minut = data
                   .split("\n")
                   [index].match("([a-zA-Z-0-9]+)(.xyt)")[1];
+                // console.log(minut);
+                const userId = minut.substring(0, minut.length - 1);
                 const db = await dbase();
                 db.chain = lodash.chain(db.data);
-                const user = db.chain.get("users").find({ _id: minut }).value();
+                const user = db.chain
+                  .get("users")
+                  .find({ _id: userId })
+                  .value();
 
                 if (max >= 23) {
                   if (arg === "signIn") {

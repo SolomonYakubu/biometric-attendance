@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 export default function Splash({ setSplash }) {
   return (
     <div className="flex items-center justify-center h-screen w-screen">
@@ -24,7 +24,7 @@ export default function Splash({ setSplash }) {
         </p>
 
         <button
-          className="btn btn-primary bg-gradient-to-r from-primary to-blue-500"
+          className="btn btn-primary bg-gradient-to-b from-primary to-blue-500"
           onClick={() => setSplash(false)}
         >
           Continue

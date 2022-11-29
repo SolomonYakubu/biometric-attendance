@@ -94,7 +94,7 @@ export default function Match() {
         <button
           className={` transition-all shadow-2xl w-16 h-16  rounded-full ${
             (signIn &&
-              "bg-primary bg-gradient-to-r from-primary to-blue-500") ||
+              "bg-primary bg-gradient-to-b from-primary to-blue-500") ||
             "bg-slate-700"
           }`}
           onClick={() => setSignIn(true)}
@@ -104,7 +104,7 @@ export default function Match() {
         <button
           className={` transition-all w-16 h-16 rounded-full ${
             (!signIn &&
-              "bg-primary bg-gradient-to-r from-primary to-blue-500") ||
+              "bg-primary bg-gradient-to-b from-primary to-blue-500") ||
             " bg-slate-700"
           }`}
           onClick={() => setSignIn(false)}
@@ -154,7 +154,7 @@ export default function Match() {
                 signIn ? getMatch : getSignOut
               );
             }}
-            className="btn btn-primary bg-gradient-to-r from-primary to-blue-500 relative  w-full  my-5 disabled:opacity-50 disabled:pointer-events-none"
+            className="btn btn-primary bg-gradient-to-b from-primary to-blue-500 relative  w-full  my-5 disabled:opacity-50 disabled:pointer-events-none"
             disabled={loading}
           >
             {loading && (

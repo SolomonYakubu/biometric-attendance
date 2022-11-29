@@ -56,7 +56,7 @@ export default function Report() {
             className="input flex-1"
             id="id"
           />
-          <button className="btn btn-primary bg-gradient-to-r from-primary to-blue-500">
+          <button className="btn btn-primary bg-gradient-to-b from-primary to-blue-500">
             Generate Report
           </button>
         </form>

@@ -16,6 +16,7 @@ const { matchUser } = require("./services/match");
 const { upload } = require("./services/upload");
 const { stats } = require("./services/stats");
 const { report } = require("./services/report");
+const { login } = require("./services/login");
 const isDev = !app.isPackaged;
 
 function createWindow() {
@@ -65,5 +66,8 @@ ipcMain.handle("get-stats", async (event, arg) => {
 });
 ipcMain.handle("get-report", async (event, arg) => {
   await report(event, arg);
+});
+ipcMain.handle("get-login", async (event, arg) => {
+  await login(event, arg);
 });
 app.whenReady().then(createWindow);

@@ -1,16 +1,19 @@
-const { debugPort } = require("process");
-
-const getData = async (event, isDev, _id) => {
+const getData = async (event, isDev, arg) => {
+  const { _id, count } = arg;
   const exec = require("child_process").exec;
+  const fs = require("fs");
+
   const dbase = require("../utils/connectDB");
   const lodash = require("lodash");
   let response;
-
+  const file = "./.db/minut";
+  if (!fs.existsSync(file)) {
+    fs.mkdirSync(file);
+  }
   const path = require("path");
-  const fs = require("fs");
 
   await exec(
-    `cd .exec & fcmb.exe ./ ${_id}`,
+    `cd .exec & fcmb.exe ./ ${_id + count.toString()}`,
     async function (error, stdout, stderr) {
       // if (stdout.split("\n")[2]) {
       //   response = stdout.split("\n")[2]?.slice(0, 28).trim();
@@ -25,8 +28,14 @@ const getData = async (event, isDev, _id) => {
         !error &&
         (response == "" || response == "Fingerprint image is written")
       ) {
-        const currentPath = path.resolve(".exec", `${_id}.xyt`);
-        const newPath = path.resolve(".db", `${_id}.xyt`);
+        const currentPath = path.resolve(
+          ".exec",
+          `${_id + count.toString()}.xyt`
+        );
+        const newPath = path.resolve(
+          ".db/minut",
+          `${_id + count.toString()}.xyt`
+        );
         // const currentImagePath = path.join("./", ".exec/bmp", `${rand}.bmp`);
         // const newImagePath = `./src/img/${rand}.bmp`;
         // fs.renameSync(currentImagePath, newImagePath, (err) => {
@@ -42,8 +51,8 @@ const getData = async (event, isDev, _id) => {
           } else {
           }
         });
-        const minPath = path.resolve(".db", "m.lis");
-        const startPath = path.resolve(".db");
+        const minPath = path.resolve(".db/minut", "m.lis");
+        const startPath = path.resolve(".db/minut");
         // if (!fs.existsSync(minPath)) {
         fs.writeFile(`${minPath}`, "", (err) => {});
         // }
@@ -64,14 +73,17 @@ const getData = async (event, isDev, _id) => {
           }
         }
 
-        // console.log(minPath);
-        // console.log(path.join(__dirname, "..", ".db", `${_id}.xyt\n`));
         const res = {
           error: false,
           status: "success",
           file: isDev
-            ? path.join(".exec/bmp", `${_id}.bmp`)
-            : path.join(process.resourcesPath, "..", ".exec/bmp", `${_id}.bmp`),
+            ? path.join(".exec/bmp", `${_id + count.toString()}.bmp`)
+            : path.join(
+                process.resourcesPath,
+                "..",
+                ".exec/bmp",
+                `${_id + count.toString()}.bmp`
+              ),
         };
         const db = await dbase();
         db.chain = lodash.chain(db.data);
