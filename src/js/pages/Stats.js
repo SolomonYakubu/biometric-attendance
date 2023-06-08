@@ -9,59 +9,8 @@ import {
   Legend,
 } from "recharts";
 import { PieChart, Pie, ResponsiveContainer } from "recharts";
-
-// const data = [
-//   {
-//     name: "Page A",
-//     uv: 4000,
-//     pv: 2400,
-//     amt: 2400,
-//   },
-//   {
-//     name: "Page B",
-//     uv: 3000,
-//     pv: 1398,
-//     amt: 2210,
-//   },
-//   {
-//     name: "Page C",
-//     uv: 2000,
-//     pv: 9800,
-//     amt: 2290,
-//   },
-//   {
-//     name: "Page D",
-//     uv: 2780,
-//     pv: 3908,
-//     amt: 2000,
-//   },
-//   {
-//     name: "Page E",
-//     uv: 1890,
-//     pv: 4800,
-//     amt: 2181,
-//   },
-//   {
-//     name: "Page F",
-//     uv: 2390,
-//     pv: 3800,
-//     amt: 2500,
-//   },
-//   {
-//     name: "Page G",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 2100,
-//   },
-// ];
-// const data01 = [
-//   { name: "Group A", value: 400 },
-//   { name: "Group B", value: 300 },
-//   { name: "Group C", value: 300 },
-//   { name: "Group D", value: 200 },
-//   { name: "Group E", value: 278 },
-//   { name: "Group F", value: 189 },
-// ];
+import * as FileSaver from "file-saver";
+import XLSX from "sheetjs-style";
 
 export default function Stats() {
   const [data, setData] = useState([]);
@@ -81,6 +30,72 @@ export default function Stats() {
     window.addEventListener("message", getStats);
   }, []);
 
+  const fileType =
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8";
+  const fileExtension = ".xlsx";
+  const attendanceData = data?.attendanceData;
+
+  const excelExport = () => {
+    const date = `${new Date().getDate()}_${new Date().getMonth()}_${new Date().getFullYear()}`;
+    const fileName = "report" + "_" + date;
+    const ws = XLSX.utils.json_to_sheet(attendanceData);
+
+    ws["A1"].s = {
+      // set the style for target cell
+      font: {
+        sz: 13,
+        bold: true,
+        color: {
+          rgb: "#000",
+        },
+      },
+    };
+    ws["B1"].s = {
+      // set the style for target cell
+      font: {
+        sz: 13,
+        bold: true,
+        color: {
+          rgb: "#000",
+        },
+      },
+    };
+    ws["C1"].s = {
+      // set the style for target cell
+      font: {
+        sz: 13,
+        bold: true,
+        color: {
+          rgb: "#000",
+        },
+      },
+    };
+    ws["D1"].s = {
+      // set the style for target cell
+      font: {
+        sz: 13,
+        bold: true,
+        color: {
+          rgb: "#000",
+        },
+      },
+    };
+    ws["E1"].s = {
+      // set the style for target cell
+      font: {
+        sz: 13,
+        bold: true,
+        color: {
+          rgb: "#000",
+        },
+      },
+    };
+    // prettier-ignore
+    const wb = { Sheets: { "data": ws }, SheetNames: ["data"] };
+    const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+    const data = new Blob([excelBuffer], { type: fileType });
+    FileSaver.saveAs(data, fileName + fileExtension);
+  };
   return (
     <div className="container pt-6 pb-14">
       <h1 className="text-white text-5xl my-2">Stats</h1>
@@ -140,6 +155,9 @@ export default function Stats() {
           Attendance Frequency By Time
         </h3>
         {/* </ResponsiveContainer> */}
+        <button className="btn btn-primary my-10" onClick={() => excelExport()}>
+          Download Attendance
+        </button>
       </div>
     </div>
   );

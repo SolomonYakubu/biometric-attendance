@@ -16,7 +16,6 @@
     "productName": "Biometrics Staff Attendance",
     "appId": "org.erb.biometricAttendance",
     "extraFiles": [
-  
       {
         "from": "./.exec",
         "to": "./.exec"
@@ -36,6 +35,7 @@
     "core-js": "^3.25.0",
     "dayjs": "^1.11.6",
     "file-loader": "^6.2.0",
+    "file-saver": "^2.0.5",
     "image-to-base64": "^2.2.0",
     "lodash": "^4.17.21",
     "lowdb": "github:dankreiger/lowdb#chore/esm-cjs-hybrid-WITH-LIB",
@@ -49,6 +49,7 @@
     "react-router-dom": "^6.3.0",
     "react-webcam": "^7.0.1",
     "recharts": "^2.1.16",
+    "sheetjs-style": "^0.15.8",
     "url-loader": "^4.1.1",
     "uuid": "^8.3.2"
   },

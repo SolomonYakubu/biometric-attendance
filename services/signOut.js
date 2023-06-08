@@ -32,7 +32,7 @@ const signOut = async (_id) => {
       +attend[num - 1].time.split(":")[0] * 60 +
       +attend[num - 1].time.split(":")[1];
     console.log(currentTime - signInTime);
-    if (currentTime - signInTime >= 1) {
+    if (currentTime - signInTime >= 30) {
       attend[num - 1].signedOut = true;
       attend[num - 1].signOutTime = time;
       console.log(attend[num - 1]);

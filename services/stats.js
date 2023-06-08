@@ -62,7 +62,6 @@ const getEachDayStats = async () => {
   for (let i = 0; i < 7; i++) {
     let currentDayNumberLength = totalAttend.filter(
       (item) =>
-        item.month === month &&
         new Date(`${item.year}-${item.month + 1}-${item.day}`).getDay() === i &&
         item.year === year
     )?.length;
@@ -96,10 +95,7 @@ const getTimeStats = async () => {
   let time = [];
   for (let i = 0; i < 24; i++) {
     let currentTimeNumberLength = totalAttend.filter(
-      (item) =>
-        item.month === month &&
-        item.time.split(":")[0] == i &&
-        item.year === year
+      (item) => item.time.split(":")[0] == i && item.year === year
     )?.length;
     let hours = {
       name: `${_24to12(`${i}:0`)} - ${_24to12(
@@ -111,17 +107,49 @@ const getTimeStats = async () => {
   }
   return time;
 };
+const allData = async () => {
+  const dbase = require("../utils/connectDB");
+
+  const lodash = require("lodash");
+  const db = await dbase();
+  db.chain = lodash.chain(db.data);
+  const users = db.chain.get("users").value();
+
+  const attendanceDB = require("../utils/connectAttendanceDB");
+
+  const attendDB = await attendanceDB();
+  attendDB.chain = lodash.chain(attendDB.data);
+
+  attendanceData = users.map((item) => ({
+    Name: item.name,
+    "Staff ID": item.staffID,
+    Department: item.department,
+    "Total Sign In": attendDB.chain
+      .get("attendance")
+      .value()
+      .filter((obj) => item._id === obj._id)[0].attendance.length,
+    "Total Sign Out": attendDB.chain
+      .get("attendance")
+      .value()
+      .filter((obj) => item._id === obj._id)[0]
+      .attendance.filter((obj2) => obj2.signedOut).length,
+  }));
+  return attendanceData;
+};
 
 const stats = async (event, arg) => {
   const totalEnrolled = await getTotalEnrolled();
   const markedToday = await getMarkedToday();
   const weekStats = await getEachDayStats();
   const timeStats = await getTimeStats();
+  const attendanceData = await allData();
+  console.log(attendanceData);
   return event.sender.send("stats-res", {
     totalEnrolled,
     markedToday,
     weekStats,
     timeStats,
+    attendanceData,
   });
 };
 

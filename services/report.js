@@ -58,7 +58,6 @@ const getEachDayStats = async (_id) => {
   for (let i = 0; i < 7; i++) {
     let currentDayNumberLength = attend?.filter(
       (item) =>
-        item.month === month &&
         new Date(`${item.year}/${item.month + 1}/${item.day}`).getDay() === i &&
         item.year === year
     )?.length;
@@ -72,6 +71,7 @@ const getTimeStats = async (_id) => {
   const dbase = require("../utils/connectAttendanceDB");
   const lodash = require("lodash");
   const db = await dbase();
+
   db.chain = lodash.chain(db.data);
   const day = new Date().getDay();
   const month = new Date().getMonth();
@@ -83,10 +83,7 @@ const getTimeStats = async (_id) => {
   let time = [];
   for (let i = 0; i < 24; i++) {
     let currentTimeNumberLength = attend?.filter(
-      (item) =>
-        item.month === month &&
-        item.time.split(":")[0] == i &&
-        item.year === year
+      (item) => item.time.split(":")[0] == i && item.year === year
     )?.length;
     let hours = {
       name: `${_24to12(`${i}:0`)} - ${_24to12(
@@ -111,7 +108,7 @@ const report = async (event, staffId) => {
   const totalAttendance = await getTotalAttendance(_id);
   const weekStats = await getEachDayStats(_id);
   const timeStats = await getTimeStats(_id);
-  console.log(staffId);
+
   return event.sender.send("report-res", {
     profile,
 
